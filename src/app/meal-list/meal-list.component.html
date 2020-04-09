@@ -1,0 +1,23 @@
+<div id="content">
+  <form id="search-bar">
+    <mat-form-field>
+      <input matInput placeholder="Search" value="">
+    </mat-form-field>
+  </form>
+  <div id="suggestions">
+    <h2>Suggestions</h2>
+    <div id="sugg-card-container">
+      <div *ngFor="let meal of meals">
+        <mat-card class="sugg-card"></mat-card>
+      </div>
+    </div>
+  </div>
+  <div id="favorites">
+    <h2>Favorites</h2>
+    <div id="fav-card-container">
+      <div *ngFor="let meal of meals">
+        <mat-card class="fav-card"></mat-card>
+      </div>
+    </div>
+  </div>
+</div>
