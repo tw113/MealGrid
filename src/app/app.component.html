@@ -1,30 +1,29 @@
 <!-- main screen container-->
-<div id="noti-bar"></div>
 <div id="top-nav">
-  <div id="back-icon">
-    <mat-icon>back</mat-icon>
-  </div>
-  <div class="flex-item">
-    <h1>Choose a Meal</h1>
-  </div>
   <div class="flex-item">
     <img id="logo" src="./assets/mp_logo_green.png">
+  </div>
+  <div class="flex-item">
+    <h1>{{pageTitle}}</h1>
+  </div>
+  <div id="user-icon">
+    <mat-icon>account_circle</mat-icon>
   </div>
 </div>
 <div id="content">
   <router-outlet></router-outlet>
 </div>
 <div id="bottom-nav">
-  <button class="bottom-btn" (click)="onNavClicked($event)">
+  <button routerLink="/calendar-view" class="bottom-btn" routerLinkActive="bottom-btn-active" (click)="changePageTitle('Calendar')">
     <mat-icon>today</mat-icon>
   </button>
-  <button class="bottom-btn" (click)="onNavClicked($event)">
+  <button routerLink="/meal-grid" class="bottom-btn" routerLinkActive="bottom-btn-active" (click)="changePageTitle('Meal Grid')">
     <mat-icon>grid_on</mat-icon>
   </button>
-  <button class="bottom-btn" (click)="onNavClicked($event)">
+  <button routerLink="/shopping-list" class="bottom-btn" routerLinkActive="bottom-btn-active" (click)="changePageTitle('Shopping List')">
     <mat-icon>shopping_cart</mat-icon>
   </button>
-  <button class="bottom-btn" (click)="onNavClicked($event)">
+  <button routerLink="/meal-list" class="bottom-btn" routerLinkActive="bottom-btn-active" (click)="changePageTitle('Meals')">
     <mat-icon>list_alt</mat-icon>
   </button>
 </div>

@@ -7,7 +7,7 @@ import { CalendarViewComponent } from './calendar-view/calendar-view.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'meal-list', pathMatch: 'full'},
+  {path: '', redirectTo: 'calendar-view', pathMatch: 'full'},
   {path:'meal-list', component: MealListComponent},
   {path:'meal-grid', component: MealGridComponent},
   {path:'shopping-list', component: ShoppingListComponent},

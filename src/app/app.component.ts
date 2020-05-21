@@ -6,21 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'MealPlanner';
-  bottomButtons: any;
+  pageTitle = 'Calendar';
 
   ngOnInit() {
-    this.bottomButtons = document.getElementsByClassName('bottom-btn');
-    this.bottomButtons[3].classList.add('bottom-btn-active');
+    
   }
 
-  onNavClicked(e) {
-    for (let i = 0; i < this.bottomButtons.length; i++) {
-      this.bottomButtons[i].classList.remove('bottom-btn-active');
-      this.bottomButtons[i].classList.add('bottom-btn');
-    }
-  
-    e.target.classList.remove('mat-icon-no-color');
-    e.target.classList.add('bottom-btn-active');
+  changePageTitle(title:string) {
+    this.pageTitle = title;
   }
 }
