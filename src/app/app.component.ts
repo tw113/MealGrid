@@ -14,5 +14,9 @@ export class AppComponent {
 
   changePageTitle(title:string) {
     this.pageTitle = title;
+    //TODO: this method
+    //      needs to be changed
+    //      page title needs to
+    //      set on refresh
   }
 }
