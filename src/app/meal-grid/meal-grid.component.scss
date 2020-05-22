@@ -1,0 +1,30 @@
+#week-container {
+  height: 33%;
+}
+
+#meal-grid-container {
+  height: 53%;
+  background-color: #f7f6f6;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.meal-card {
+  display: flex;
+  
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  color: #34d66a;
+
+  mat-icon {
+    width: auto;
+    height: auto;
+    font-size: 32px;
+  }
+  
+}

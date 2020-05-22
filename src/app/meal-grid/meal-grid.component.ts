@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meal-grid.component.scss']
 })
 export class MealGridComponent implements OnInit {
+  mealCards = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
   constructor() { }
 
