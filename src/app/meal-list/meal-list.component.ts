@@ -9,6 +9,8 @@ export class MealListComponent implements OnInit {
 
   meals: any[];
 
+  //TODO: make favorites area have smaller cards
+
   constructor() { }
 
   ngOnInit(): void {
